@@ -117,7 +117,7 @@
             <span class="w-2 h-2 rounded-full bg-accent-500"></span> Bera SBR-150 Urbana • Método Susu
           </div>
           <h1 id="slideTitle2" class="text-2xl md:text-4xl font-extrabold leading-snug mt-1">Explora los colores disponibles</h1>
-          <p class="text-white/80 text-sm md:text-base mt-1">Desliza o usa las flechas. Si subes tus fotos en "Modelos", se verán aquí.</p>
+          <p class="text-white/80 text-sm md:text-base mt-1">Desliza o usa las flechas para ver todos los colores disponibles.</p>
         </div>
         <div class="flex flex-wrap items-center gap-3">
           <a href="#modelos" class="glassy px-5 py-3 rounded-xl font-semibold text-white/90">Ver modelos</a>
@@ -140,7 +140,7 @@
         <div class="glassy rounded-2xl p-6">
           <div class="w-12 h-12 rounded-xl bg-primary-600 grid place-items-center mb-4 shadow-glow">2</div>
           <h3 class="font-bold mb-2">Armas tu ciclo</h3>
-          <p class="text-white/80 text-sm">Aportes semanales fijos con tu grupo.</p>
+          <p class="text-white/80 text-sm">Aportes semanales fijos</p>
         </div>
         <div class="glassy rounded-2xl p-6">
           <div class="w-12 h-12 rounded-xl bg-primary-600 grid place-items-center mb-4 shadow-glow">3</div>
@@ -162,7 +162,7 @@
       <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-6">
         <div>
           <h2 class="text-3xl md:text-4xl font-extrabold">Bera SBR-150 Urbana</h2>
-          <p class="text-white/80 mt-2">Tus fotos reales por color; se guardan en tu dispositivo y aparecen también en el carrusel.</p>
+          <p class="text-white/80 mt-2">Imágenes oficiales de cada color disponible.</p>
         </div>
         <div class="flex items-center gap-3 text-sm text-white/70">
           <span class="inline-flex items-center gap-2">
@@ -175,15 +175,10 @@
         <!-- Negra -->
         <div class="model-card glassy rounded-2xl p-5 flex flex-col" data-brand="Bera" data-model="SBR-150 Urbana Negra" data-price="1750">
           <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 grid place-items-center">
-            <img id="img-SBR150-Negra" alt="SBR-150 Negra" class="w-full h-full object-cover hidden"/>
-            <div class="absolute inset-0 flex items-center justify-center text-white/70 text-sm" id="ph-SBR150-Negra">Foto SBR-150 Negra</div>
+            <img src="https://example.com/sbr150-negra.jpg" alt="SBR-150 Negra" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
+            <div class="absolute inset-0 flex items-center justify-center text-white/70 text-sm" style="display: none;">Imagen no disponible</div>
           </div>
-          <div class="flex items-center justify-between mt-3">
-            <div class="flex gap-2">
-              <button class="glassy px-3 py-1 rounded-lg text-xs" onclick="triggerPhoto('SBR150-Negra')">Agregar foto</button>
-              <button class="glassy px-3 py-1 rounded-lg text-xs" onclick="clearPhoto('SBR150-Negra')">Quitar</button>
-            </div>
-            <input id="file-SBR150-Negra" type="file" accept="image/*" class="hidden" onchange="handlePhotoChange(event,'SBR150-Negra')"/>
+          <div class="flex items-center justify-end mt-3">
             <div class="text-xs bg-primary-600/50 rounded-full px-2 py-1">150cc</div>
           </div>
           <h3 class="font-bold mt-3">SBR-150 Negra</h3>
@@ -198,22 +193,17 @@
         <!-- Azul -->
         <div class="model-card glassy rounded-2xl p-5 flex flex-col" data-brand="Bera" data-model="SBR-150 Urbana Azul" data-price="1750">
           <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 grid place-items-center">
-            <img id="img-SBR150-Azul" alt="SBR-150 Azul" class="w-full h-full object-cover hidden"/>
-            <div class="absolute inset-0 flex items-center justify-center text-white/70 text-sm" id="ph-SBR150-Azul">Foto SBR-150 Azul</div>
+            <img src="https://example.com/sbr150-azul.jpg" alt="SBR-150 Azul" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
+            <div class="absolute inset-0 flex items-center justify-center text-white/70 text-sm" style="display: none;">Imagen no disponible</div>
           </div>
-          <div class="flex items-center justify-between mt-3">
-            <div class="flex gap-2">
-              <button class="glassy px-3 py-1 rounded-lg text-xs" onclick="triggerPhoto('SBR150-Azul')">Agregar foto</button>
-              <button class="glassy px-3 py-1 rounded-lg text-xs" onclick="clearPhoto('SBR150-Azul')">Quitar</button>
-            </div>
-            <input id="file-SBR150-Azul" type="file" accept="image/*" class="hidden" onchange="handlePhotoChange(event,'SBR150-Azul')"/>
+          <div class="flex items-center justify-end mt-3">
             <div class="text-xs bg-primary-600/50 rounded-full px-2 py-1">150cc</div>
           </div>
           <h3 class="font-bold mt-3">SBR-150 Azul</h3>
           <p class="text-white/75 text-sm mt-1">Deportiva con acentos en azul intenso.</p>
           <div class="mt-4 flex items-center justify-between">
             <div class="text-white font-bold">$1,480</div>
-            <div class="text-white/70 text-xs">De$37/sem</div>
+            <div class="text-white/70 text-xs">$37/sem</div>
           </div>
           <button class="mt-5 w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2.5 rounded-xl" onclick="prefillModel('Bera','SBR-150 Azul',1750)">Solicitar por Susu</button>
         </div>
@@ -221,15 +211,10 @@
         <!-- Gris -->
         <div class="model-card glassy rounded-2xl p-5 flex flex-col" data-brand="Bera" data-model="SBR-150 Urbana Gris" data-price="1750">
           <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 grid place-items-center">
-            <img id="img-SBR150-Gris" alt="SBR-150 Gris" class="w-full h-full object-cover hidden"/>
-            <div class="absolute inset-0 flex items-center justify-center text-white/70 text-sm" id="ph-SBR150-Gris">Foto SBR-150 Gris</div>
+            <img src="https://example.com/sbr150-gris.jpg" alt="SBR-150 Gris" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
+            <div class="absolute inset-0 flex items-center justify-center text-white/70 text-sm" style="display: none;">Imagen no disponible</div>
           </div>
-          <div class="flex items-center justify-between mt-3">
-            <div class="flex gap-2">
-              <button class="glassy px-3 py-1 rounded-lg text-xs" onclick="triggerPhoto('SBR150-Gris')">Agregar foto</button>
-              <button class="glassy px-3 py-1 rounded-lg text-xs" onclick="clearPhoto('SBR150-Gris')">Quitar</button>
-            </div>
-            <input id="file-SBR150-Gris" type="file" accept="image/*" class="hidden" onchange="handlePhotoChange(event,'SBR150-Gris')"/>
+          <div class="flex items-center justify-end mt-3">
             <div class="text-xs bg-primary-600/50 rounded-full px-2 py-1">150cc</div>
           </div>
           <h3 class="font-bold mt-3">SBR-150 Gris</h3>
@@ -244,15 +229,10 @@
         <!-- Roja -->
         <div class="model-card glassy rounded-2xl p-5 flex flex-col" data-brand="Bera" data-model="SBR-150 Urbana Roja" data-price="1750">
           <div class="relative w-full aspect-video rounded-xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 grid place-items-center">
-            <img id="img-SBR150-Roja" alt="SBR-150 Roja" class="w-full h-full object-cover hidden"/>
-            <div class="absolute inset-0 flex items-center justify-center text-white/70 text-sm" id="ph-SBR150-Roja">Foto SBR-150 Roja</div>
+            <img src="https://example.com/sbr150-roja.jpg" alt="SBR-150 Roja" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
+            <div class="absolute inset-0 flex items-center justify-center text-white/70 text-sm" style="display: none;">Imagen no disponible</div>
           </div>
-          <div class="flex items-center justify-between mt-3">
-            <div class="flex gap-2">
-              <button class="glassy px-3 py-1 rounded-lg text-xs" onclick="triggerPhoto('SBR150-Roja')">Agregar foto</button>
-              <button class="glassy px-3 py-1 rounded-lg text-xs" onclick="clearPhoto('SBR150-Roja')">Quitar</button>
-            </div>
-            <input id="file-SBR150-Roja" type="file" accept="image/*" class="hidden" onchange="handlePhotoChange(event,'SBR150-Roja')"/>
+          <div class="flex items-center justify-end mt-3">
             <div class="text-xs bg-primary-600/50 rounded-full px-2 py-1">150cc</div>
           </div>
           <h3 class="font-bold mt-3">SBR-150 Roja</h3>
@@ -265,7 +245,7 @@
         </div>
       </div>
 
-      <p class="text-white/60 text-xs mt-4">Demo by Leonova Studio.</p>
+      <p class="text-white/60 text-xs mt-4">Las imágenes se cargan automáticamente desde nuestro servidor para garantizar calidad y consistencia.</p>
     </div>
   </section>
 
@@ -338,7 +318,7 @@
         <div class="glassy rounded-2xl p-6 lg:p-8 w-full lg:w-2/3">
           <div class="flex items-center justify-between gap-4">
             <h2 class="text-3xl font-extrabold">Regístrate al ciclo Susu</h2>
-            <span class="text-xs bg-yellow-400/20 text-yellow-200 px-3 py-1 rounded-full">Demo</span>
+            <span class="text-xs bg-yellow-400/20 text-yellow-200 px-3 py-1 rounded-full">Demo by Leonova Studio</span>
           </div>
           <p class="text-white/80 mt-2 text-sm">Te contactaremos para validar disponibilidad y próximas fechas.</p>
           <form id="formRegistro" class="mt-6 grid sm:grid-cols-2 gap-4">
@@ -476,12 +456,12 @@
     // Año
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Dataset del carrusel (solo SBR-150 colores)
+    // Dataset del carrusel (solo SBR-150 colores) - URLs de imágenes en línea
     const slidesData = [
-      { key:'SBR150-Negra', title:'SBR-150 Negra', color:'#111111' },
-      { key:'SBR150-Azul',  title:'SBR-150 Azul',  color:'#1d4ed8' },
-      { key:'SBR150-Gris',  title:'SBR-150 Gris',  color:'#6b7280' },
-      { key:'SBR150-Roja',  title:'SBR-150 Roja',  color:'#dc2626' }
+      { key:'SBR150-Negra', title:'SBR-150 Negra', color:'#111111', imageUrl: 'Bera Black2.jpg' },
+      { key:'SBR150-Azul',  title:'SBR-150 Azul',  color:'#1d4ed8', imageUrl: 'Bera Azul2.jpg' },
+      { key:'SBR150-Gris',  title:'SBR-150 Gris',  color:'#6b7280', imageUrl: 'Bera Gris2.jpg' },
+      { key:'SBR150-Roja',  title:'SBR-150 Roja',  color:'#dc2626', imageUrl: 'Bera Roja2.jpg' }
     ];
 
     const slidesWrap = document.getElementById('slides');
@@ -520,12 +500,12 @@
       slidesWrap.innerHTML = '';
       dotsWrap.innerHTML = '';
       slidesData.forEach((s, idx) => {
-        const saved = localStorage.getItem('photo_' + s.key);
-        const src = saved || placeholderSVG(s.title, s.color);
+        // Usar imagen en línea si está disponible, sino usar placeholder
+        const src = s.imageUrl || placeholderSVG(s.title, s.color);
         const slide = document.createElement('div');
         slide.className = 'relative w-full shrink-0 h-[68vh] md:h-[78vh]';
         slide.innerHTML = `
-          <img src="${src}" alt="${s.title}" class="absolute inset-0 w-full h-full object-cover"/>
+          <img src="${src}" alt="${s.title}" class="absolute inset-0 w-full h-full object-cover" onerror="this.src='${placeholderSVG(s.title, s.color).replace(/'/g, "\\'")}'; this.onerror=null;"/>
           <div class="absolute inset-0 bg-black/25"></div>
           <div class="absolute left-6 right-6 top-6 md:left-10 md:top-10">
             <span class="inline-block bg-white/10 text-white/90 text-xs px-3 py-1 rounded-full">Bera SBR-150 Urbana</span>
@@ -593,39 +573,8 @@
     buildSlides();
     startAuto();
 
-    // Manejo de fotos locales por color (también para carrusel)
-    function triggerPhoto(key){
-      const input = document.getElementById('file-'+key);
-      if (input) input.click();
-    }
-    function handlePhotoChange(e,key){
-      const file = e.target.files[0];
-      if(!file) return;
-      const reader = new FileReader();
-      reader.onload = () => {
-        localStorage.setItem('photo_'+key, reader.result);
-        const img = document.getElementById('img-'+key);
-        const ph = document.getElementById('ph-'+key);
-        if (img && ph){
-          img.src = reader.result;
-          img.classList.remove('hidden');
-          ph.classList.add('hidden');
-        }
-        buildSlides();
-      };
-      reader.readAsDataURL(file);
-    }
-    function clearPhoto(key){
-      localStorage.removeItem('photo_'+key);
-      const img = document.getElementById('img-'+key);
-      const ph = document.getElementById('ph-'+key);
-      if (img && ph){
-        img.src = '';
-        img.classList.add('hidden');
-        ph.classList.remove('hidden');
-      }
-      buildSlides();
-    }
+    // Las imágenes ahora se cargan directamente desde URLs en línea
+    // No se necesitan funciones de manejo de fotos locales
 
     // Prefill modelo en registro
     function prefillModel(marca, modelo, precio) {
@@ -797,5 +746,5 @@
       document.getElementById('modelo').value = keepModelo;
     });
   </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'974e901f871e845f',t:'MTc1NjE2MTMzMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'974ecc63d1a96d9e',t:'MTc1NjE2Mzc5OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
