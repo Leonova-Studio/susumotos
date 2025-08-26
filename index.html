@@ -96,7 +96,7 @@
 
   <!-- Carrusel ancho completo (solo SBR-150 en colores) -->
   <section id="carrusel" class="relative">
-    <div class="relative w-full h-[768px] overflow-hidden">
+    <div class="relative w-full h-[68vh] md:h-[78vh] overflow-hidden">
       <div id="slides" class="absolute inset-0 flex transition-transform duration-700 ease-out"></div>
       <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40"></div>
 
@@ -467,25 +467,7 @@
     const slidesWrap = document.getElementById('slides');
     const slideTitle = document.getElementById('slideTitle');
     const dotsWrap = document.getElementById('dots');
-    // Generar imágenes del carrusel y los puntos
-slidesData.forEach((slide, index) => {
-  // Crear imagen
-  const img = document.createElement('img');
-  img.src = slide.imageUrl;
-  img.alt = slide.title;
-  img.className = 'w-full h-full object-contain object-center flex-shrink-0';
-  slidesWrap.appendChild(img);
-
-  // Crear punto de navegación
-  const dot = document.createElement('button');
-  dot.className = 'w-2 h-2 rounded-full bg-white/50 hover:bg-white transition';
-  dot.setAttribute('data-index', index);
-  dotsWrap.appendChild(dot);
-});
-    const slidesWrap = document.getElementById('slides');
-const slideTitle = document.getElementById('slideTitle');
-const dotsWrap = document.getElementById('dots');
-
+  
     function placeholderSVG(label, hex){
       // marcador elegante con color predominante
       return `data:image/svg+xml;utf8,${encodeURIComponent(`
@@ -766,6 +748,7 @@ const dotsWrap = document.getElementById('dots');
   </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'974ecc63d1a96d9e',t:'MTc1NjE2Mzc5OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
 
 
 
